@@ -24,7 +24,7 @@ class Test_Orangehrm:
 
     def test_OrangeHRM(self, boot):
         # Login to the application
-        LoginPage.login(self)
+        LoginPage.login(self,boot)
 
         # Navigate to PIM module
         PIM_Page_Elements.navigate_to_pim_module(self)

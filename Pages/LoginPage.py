@@ -7,7 +7,7 @@ from Locator.Locator_OrangeHRM import Locators
 
 
 class LoginPage:
-    def login(self):
+    def login(self, boot):
         self.driver.get(Locators.url_login)
         wait = WebDriverWait(self.driver, 10)
 

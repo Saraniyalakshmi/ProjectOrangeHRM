@@ -42,9 +42,11 @@ class PIM_Page_Elements:
 
                 delete_button = wait.until(EC.element_to_be_clickable((By.XPATH,Locators.delete_button)))
                 self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", delete_button)
+                time.sleep(2)
                 delete_button.click()
 
                 confirm_delete_button = wait.until(EC.element_to_be_clickable((By.XPATH,Locators.confirm_delete_button)))
+                time.sleep(2)
                 confirm_delete_button.click()
                 print("Employee deleted successfully")
 
